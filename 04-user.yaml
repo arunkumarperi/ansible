@@ -7,5 +7,5 @@
         name: teju
     - name: create app directory
       ansible.builtin.file:
-        path: /c/devops/repos/ansible
+        path: /app
         state: directory
