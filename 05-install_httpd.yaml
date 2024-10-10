@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: install httpd package
-      ansible.builtin.dnf:
+      community.general.apache2_module:
         name: httpd
         state: present
     - name: start httpd service
