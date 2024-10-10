@@ -2,11 +2,11 @@
   hosts: web
   become: yes
   tasks:
-    -name: install httpd package
+    - name: install httpd package
       community.general.apache2_module:
         name: httpd
         state: present
-    -name: start httpd service
-       community.general.apache2_module:
+    - name: start httpd service
+      community.general.apache2_module:
         state: started
         enabled: yes
