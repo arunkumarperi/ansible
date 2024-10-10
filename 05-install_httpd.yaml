@@ -2,11 +2,11 @@
   hosts: web
   become: yes
   tasks:
-    - name: Enable the Apache2 module wsgi
-      community.general.apache2_module:
+    - name: install Apache2 
+      ansible.builtin.dnf:
         state: present
-        name: wsgi
-    - name: start httpd service
+        name: apache2
+    - name: start apache2 service
       ansible.builtin.service:
         state: started
         enabled: yes
