@@ -6,7 +6,4 @@
       ansible.builtin.dnf:
         state: present
         name: apache2
-    - name: start apache2 service
-      ansible.builtin.service:
-        state: started
-        enabled: yes
+    
