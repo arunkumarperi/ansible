@@ -4,7 +4,6 @@
   tasks:
   - name: Create a user 'ravi' with a home directory
     ansible.builtin.user:
-      create_home: yes
       private: false
     
 
