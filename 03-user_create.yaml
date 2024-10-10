@@ -5,7 +5,7 @@
   - name: Create a user 'ravi' with a home directory
     ansible.builtin.user:
       name: "{{item}}"
-      state: latest
+      state: present
     loop:
     - arun
     - gopi
