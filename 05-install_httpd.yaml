@@ -1,9 +1,9 @@
-- name: install httpd 
+- name: install HTTPD server
   hosts: web
   become: yes
   tasks:
-    - name: install Apache2 
+    - name: install HTTPD package
       ansible.builtin.dnf:
         state: present
-        name: apache2
+        name: httpd
     
