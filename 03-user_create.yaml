@@ -6,6 +6,8 @@
     ansible.builtin.user:
       create_home: yes
       state: present
-      
+      privare: true
+
+
 
 
