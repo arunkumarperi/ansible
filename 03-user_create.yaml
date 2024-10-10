@@ -2,9 +2,9 @@
   hosts: web
   become: yes
   tasks:
-  - name: create a user
+  - name: Create a user 'ravi' with a home directory
     ansible.builtin.user:
     name: ravi
     state: present
-    
+
 
