@@ -1,0 +1,11 @@
+- name: to create user
+  hosts: web
+  become: yes
+  tasks:
+    - name: create teju user
+      ansible.builtin.user:
+        name: teju
+    - name: create app directory
+      ansible.builtin.file:
+        path: /app
+        state: directory
