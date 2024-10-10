@@ -6,4 +6,9 @@
       ansible.builtin.dnf:
         state: present
         name: httpd
+    - name: start HTTPD service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+        enabled: yes
     
