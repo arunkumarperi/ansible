@@ -4,7 +4,11 @@
   tasks:
   - name: Create a user 'ravi' with a home directory
     ansible.builtin.user:
-      private: false
+      name: "{{item}}"
+      state: latest
+    loop:
+    - arun
+    - gopi
     
 
 
