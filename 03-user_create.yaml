@@ -1,0 +1,10 @@
+- name: to create user
+  hosts: web
+  become: yes
+  tasks:
+  - name: create a user
+    ansible.builtin.user:
+    name: ravi
+    state: present
+    
+
